@@ -7,7 +7,7 @@ var port = process.env.PORT || 8080;
 
 // configuration ===============================================================
 
-mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu'); 	// connect to mongoDB database on modulus.io
+mongoose.connect('localhost:27017'); 	// connect to mongoDB database
 
 app.configure(function() {
 	app.use(express.static(__dirname + '/public')); 		// set the static files location /public/img will be /img for users
