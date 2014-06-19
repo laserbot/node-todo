@@ -7,7 +7,7 @@ var port = process.env.PORT || 8080;
 
 // configuration ===============================================================
 
-mongoose.connect('localhost:27017'); 	// connect to mongoDB database
+mongoose.connect('localhost:27017/todo'); 	// connect to mongoDB database
 
 app.configure(function() {
 	app.use(express.static(__dirname + '/public')); 		// set the static files location /public/img will be /img for users
